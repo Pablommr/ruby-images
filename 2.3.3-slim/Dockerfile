@@ -36,7 +36,7 @@ RUN set -ex && \
 
 ENV BUNDLER_VERSION=1.14.6
 
-RUN gem install bundler
+RUN gem install bundler -v "$BUNDLER_VERSION"
 
 ENV GEM_HOME=/usr/local/bundle
 ENV BUNDLE_PATH=/usr/local/bundle
